@@ -66,54 +66,60 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	width: 900px;
-	margin: 0 auto;
-	vertical-align: middle;
+	display: flex;
+	justify-content: center;
 }
 
-.block {
-	position: relative;
-	width: 100%;
+.container {
+	width: 900px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
 }
 
 nav {
+	display: flex;
+	justify-content: space-evenly;
+	width: 700px
+}
+
+nav a {
 	display: inline-block;
-	color: darkgrey;
-	height: 60px;
-	padding: 10px 0px 0px 0px;
-}
-
-.navi {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
 	font-size: 14px;
-	color: darkgray; 
-	margin: 15px 20px;
-	position: relative;
-	border: none;
-	outline: none;
+	color: darkgrey;
 }
 
-#navibar {
-	overflow: hidden;
+nav a:hover {
+	text-decoration: underline;
+  }
+  
+nav a:last-child {
+	margin-right: 20px;
   }
 
 .logo {
-	float: right;
-	padding: 5px 10px 0px 0px;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .call {
-	position: relative;
+	width: 900px;
+	height: 500px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 .call .call_text {
-	display: inline-block;
-	vertical-align: top;
-	font-size: 70px;
-	margin: 100px 0px;
-	text-align: center;
-	padding: 0px 55px;
-	width: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+ 	font-size: 77px;
+    text-align: center;
 }
 
 .call .call_text button {
@@ -128,26 +134,20 @@ nav {
 	cursor: pointer;
 }
 
-.call_image {
-	display: inline-block;
-	width: 40%;
-	position: relative;
-	top: 50px;
-	right: 0px;
-}
-
 .content {
-	position: relative;
+	padding: 50px 0px;
+	display: flex;
+	flex-direction: column;
 }
 
-.content .content_above {
-	display: inline-block;
-	width: 420px;
-	margin: 1% 1% 2% 1%;
-	padding: 25px 0; 
-	line-height: 20px;
+.content_above {
+	display: flex;
+	justify-content: space-between;
 }
 
+.content_above .above_text{
+	width: 410px;
+}
 .content .content_below {
 	display: inline-block;
 	width: 274px;
