@@ -148,19 +148,31 @@ nav a:last-child {
 .content_above .above_text{
 	width: 410px;
 }
-.content .content_below {
-	display: inline-block;
-	width: 274px;
-	margin: 1% 8px 2% 8px;	
-	padding: 25px 0px;
-	line-height: 20px;	
+
+.middle-img {
+	margin: 50px 0px;
+}
+.content_below {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content_below .below_text {
+	width: 250px;
+}
+
+.contact {
+	margin: 60px 0;
 }
 
 footer {
-	padding: 25px 0px 0px 0px; 
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px; 
 }
 
 #copy {
-	text-align: center;
-	padding: 35px 0px;
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
 }
