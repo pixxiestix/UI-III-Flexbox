@@ -78,18 +78,18 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 30px;
+	margin-top: 16px;
 }
 
 nav {
 	display: flex;
-	justify-content: space-evenly;
-	width: 700px
+	justify-content: space-between;
+	width: 750px
 }
 
 nav a {
 	display: inline-block;
-	font-size: 14px;
+	font-size: 15px;
 	color: darkgrey;
 }
 
